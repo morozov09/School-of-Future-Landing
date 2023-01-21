@@ -11,9 +11,24 @@
     justify-content: space-between;
 }
 
+// body {
+//     width: 100%;
+//     min-height: 100vh;
+//     margin: 0;
+//     background: url('/img/Rectangle\ 6.png');
+// }
+
+.header__background {
+    width: 100%;
+    margin: 0;
+    background-image: url('/img/Rectangle\ 6.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 .header {
+
     &__logo {
         margin-top: 18.7px;
         max-width: 236px;
@@ -21,9 +36,9 @@
 
     }
     &__contacts {
-    font-family: 'Gotham Pro', sans-serif;
+    font-family: 'Gotham Pro';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 20px;
     line-height: 118.2%;
     color: #243976;
@@ -121,7 +136,7 @@
             order: 0;
             flex-grow: 0;
             padding-right: 30px;
-            transition: all 0.3s ease-in;
+            transition: all 0.15s ease-in;
             &:last-child {
                 padding-right: 0;
             } 
@@ -150,5 +165,143 @@
         }
         }
     }
+}
+
+.subtittle__btns {
+    &-items {
+        display: flex;
+        justify-content: space-between;
+        max-width: 420px;
+        max-height: 40px;
+        margin-top: 45px;
+    }
+    &-item {
+        background: linear-gradient(26.5deg, #4271DF 16.72%, #789CF1 95.45%);
+        border-radius: 15px;
+        max-width: 131px;
+        max-height: 30px;
+        padding: 8px 29px 8px 29px;
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 118.2%;
+        color: #FFFFFF;
+        transition: all 0.4s ease-in;
+        &:hover {
+            transform: scale(1.3);
+            background: linear-gradient(272.77deg, #864FF1 0%, #49B3F7 100%);
+            border-radius: 25px;
+            max-height: 40px;
+            box-shadow: inset;
+            -webkit-box-shadow: 4px 27px 60px 5px rgba(134, 79, 241, 0.22);
+            -moz-box-shadow: 4px 27px 60px 5px rgba(134, 79, 241, 0.22);
+            box-shadow: 4px 27px 60px 5px rgba(134, 79, 241, 0.22);
+        }
+    }
+}
+
+.promo  {
+    &__left-wrapper {
+        max-height: 550px;
+        padding-bottom: 60px;
+    }
+    &__btn {
+        background: linear-gradient(272.77deg, #864FF1 0%, #49B3F7 100%);
+        box-shadow: 0px 6px 21px rgba(104, 130, 245, 0.67);
+        border-radius: 90px;
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 700;
+        line-height: 400%;
+        letter-spacing: 0.125em;
+        text-transform: uppercase;
+        width: 273px;
+        height: 67px;
+        text-align: center;
+        margin-right: 18px;
+        margin-top: 15px;
+        transition: all 0.5s ease-in;
+
+
+        &:hover {
+            transform: scale(1.1);
+           cursor: pointer; 
+           
+        }
+        a {
+            font-size: 11px;
+            color: #FFFFFF;
+            
+
+        }
+        &-text {
+            transition: all 0.5s;
+        
+        }
+    }
+    &__header {
+        margin-top: 15px;
+        max-width: 682px;
+        max-height: 153px;
+        font-family: 'ALSSchlangesans';
+        font-weight: 700;
+        font-size: 84px;
+        line-height: 103.2%;
+        color: #243976;
+        margin-bottom: 40px;
+        &-text {
+            color:  #49B3F7;
+        }
+        &-main-img {
+            float: right;
+            max-width: 673px;
+            max-height: 400px;
+            margin-top: -465px;
+        }
+    }
+    &__header-descr {
+        max-width: 494px;
+        max-height: 135px;
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 165.2%;
+        color: #243976;
+        margin-bottom: 37px;
+        &-text {
+            font-weight: 700;
+        }
+    }
+    &__header-contacts {
+        margin-left: 25px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-top: 15px;
+        max-width: 231px;
+        max-height: 40px;
+        text-align: center;
+        padding-right: 15px;
+    }
+    &__header-write {
+        padding-right: 15px;
+        width: 121px;
+        height: 28px;
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 165.2%;
+        text-transform: lowercase;
+
+        color: #737373;
+    }
+    &__header-img {
+        padding-right: 15px;
+
+    }
+
 }
 
