@@ -18,6 +18,10 @@
     background-image: url('/img/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
+    img{
+        max-width: 673px;
+        max-height: 400px;
+    }
 }
 
 
@@ -27,7 +31,10 @@
         margin-top: 18.7px;
         max-width: 236px;
         max-height: 67px;
-
+        img {
+            max-width: 236px;
+            max-height: 67px;
+        }
     }
     &__contacts {
     font-family: 'Gotham Pro';
@@ -298,4 +305,82 @@
     }
 
 }
+
+.container__lesson {
+    width: 1142px;
+}
+
+.lesson {
+    &__header {
+        padding-top: 60px;
+        display: block;
+        margin: 0 auto;
+        font-family: 'ALSSchlangesans';
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 103.2%;
+        text-align: center;
+        color: #243976;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 60px;
+        max-width: 1022px;
+        margin: 0 auto;
+        padding-top: 60px ;
+    }
+    &__item {
+        img {
+            max-width: 70px;
+            max-height: 70px;
+        }
+    }
+    &__item-descr{
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 150%;
+        text-align: center;
+        color: #243976;  
+        margin-top: 32px;  
+    }
+    &__wrapper {
+        display: flex;
+        background: url(/img/bg-girl.png);
+        background-size: 1142px;
+        background-repeat: no-repeat;
+        margin-top: 24px;
+        padding: 7% 47px 47px 20%;
+    }
+    &__center-header {
+        font-family: 'ALSSchlangesans';
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 103.2%;
+        color: #243976;
+    }
+    &__center-descr {
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #243976;
+        margin-top: 5px;
+    }
+    &__center {
+        margin-top: 30px;
+        padding-left: 15px;
+    }
+    &__right {
+        margin-left: 33px;
+    }
+}
+
+
+
+
 
